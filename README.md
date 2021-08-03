@@ -25,7 +25,7 @@ this.token = Pubsub.subscribe('updateListState', (_, data) => {
  Pubsub.unsubscribe(this.token)
 ```
 ## fetch发送请求(关注分离设计思想)
-==要考虑请求失败怎么办==
+要处理请求失败的情况
 ```javascript
 try {
       const reponse = await fetch(`/api1/search/users2?q=${keyword}`)
